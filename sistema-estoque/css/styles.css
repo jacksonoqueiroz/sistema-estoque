@@ -1,0 +1,76 @@
+body {
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            min-height: 100vh;
+            background: #343a40;
+            color: #fff;
+            position: fixed;
+            width: 220px;
+            top: 0;
+            left: 0;
+            padding-top: 60px;
+        }
+        .sidebar a {
+            color: #adb5bd;
+            text-decoration: none;
+            display: block;
+            padding: 12px;
+        }
+        .sidebar a:hover {
+            background: #495057;
+            color: #fff;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 30px;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+        }
+        .badge-alerta {
+            background-color: #dc3545;
+            font-size: 0.75rem;
+            margin-left: 5px;
+        }
+        .badge-baixo {
+            color: #c30e0e;
+        }
+        .badge-ok {
+            color: #249d28;
+        }
+
+        /*-------------Tabelas Itens e Peças---------------*/
+        table th, table td {
+        white-space: nowrap; /* impede que quebre linha */
+        padding: 8px 12px; /* ajusta o espaço interno */
+        vertical-align: middle; /* centraliza melhor */
+        
+        }
+        
+        table th {
+        font-weight: bold;
+        }
+
+        /*------------------Menu responsivo------------------*/
+        #sidebar {
+        transition: transform 0.3s ease;
+        }
+        /* Esconde o menu por padrão em telas pequenas */
+        @media (max-width: 768px) {
+        #sidebar {
+            transform: translateX(-260px);
+            position: absolute;
+            z-index: 1000;
+            height: 100%;
+        }
+        #sidebar.show {
+            transform: translateX(0);
+        }
+
+        /*------------Etiqueta de Recebimento-------*/
+        
+        
+
+        
