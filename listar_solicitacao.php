@@ -56,19 +56,20 @@ include 'include/head.php';
                 			<a href="separar_itens.php?id_peca=<?php echo $id_peca ?>&id_solicitacao=<?php echo $id_solicitacao ?>" class="btn btn-primary">Separar Item</a>                		
                 		</div>
                 	   </td>
-                	    <?php
-			}
-		}else{
-			echo "Nenhuma peça solicitada! Vá em solicitar produção.";
-		}
-
-				?>
+                	  
 
                 </tr>
                
               </tr>
+                <?php
+			}
+		}else{
+			
+		}
+
+				?>
              
-       
+       <tr><td colspan="4">Nenhum item cadastrado neste grupo.</td></tr>
 				</tbody>
 		</table>
 	

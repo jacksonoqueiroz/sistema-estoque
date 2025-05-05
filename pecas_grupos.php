@@ -9,6 +9,7 @@ include 'include/head.php';
 $stmt = $pdo->query("
     SELECT 
     peca.id AS peca_id,
+    peca.codigo,
     peca.nome AS peca_nome,
     peca.estoque_atual,
     grupos.nome AS grupo_nome

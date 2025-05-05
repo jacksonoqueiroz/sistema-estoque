@@ -106,6 +106,23 @@ include 'include/head.php';
             </ul>
         </div>
     </li>
+    <!-- Itens Montagem -->    
+    <li>
+        <a class="nav-link text-white d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#submenuItensMontagem" role="button" aria-expanded="false" aria-controls="submenuItensMontagem" id="linkConsultaPedidos">
+            <span>📦 Itens Montagem</span> 
+            <span id="iconPedidos" class="rotate-icon">🔽</span>
+        </a>
+        <div class="collapse" id="submenuItensMontagem">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ps-4">
+                <a href="listar_itens_montagem.php" class="nav-link text-white">📦 Itens Montagem
+                </a>
+                <li><a href="itens_por_grupo.php" class="nav-link text-white">🗄️ Itens por grupo</a></li>
+                <li><a href="locar_itens_montagem.php" class="nav-link text-white">⚙️  Locar Itens</a></li>
+                <li><a href="itens_montagem_alocados.php" class="nav-link text-white">⚙️  Itens Alocados</a></li>
+            </ul>
+        </div>
+    </li>
+    
 
     <!-- Consultar com submenu animado -->
     <li>
@@ -119,6 +136,12 @@ include 'include/head.php';
                 <li><a href="itens_por_peca.php" class="nav-link text-white">⚙️ Itens Por Peça</a></li>
                 <li><a href="relatorio_compra_itens.php" class="nav-link text-white">⚙️  Itens por fornecedor</a></li>
                 <li><a href="itens_alocados.php" class="nav-link text-white">⚙️  Itens Alocados</a></li>
+                <!-- Itens Montagem-->
+                <li class="nav-item">
+                <a href="itens_por_grupo.php" class="nav-link text-white">
+                        ⚙️ Itens Montagem por grupo
+                </a>
+                </li>
             </ul>
         </div>
     </li>
@@ -271,6 +294,8 @@ $pedidos_pendentes = $pdo->query("SELECT COUNT(*) FROM pedidos_compra WHERE stat
 
         </div>
     </div>
+</div>
+</div>
 </div>
 
 
